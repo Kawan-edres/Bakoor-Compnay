@@ -16,6 +16,7 @@ const ProjectsIntro = () => {
   const right=useAnimation();
   const left=useAnimation();
 
+  
     // intro animation
     if(inView){
       right.start({
@@ -39,14 +40,14 @@ const ProjectsIntro = () => {
     }
 
   return (
-    <section className="section-box mt-15 "  >
+    <section ref={ref} className="section-box mt-15 "  >
 
 
   
       <div className="banner-hero bg-2 ">
         <div  className="container ">
-          <div ref={ref}  className="row">
-            <motion.div animate={left} className="col-lg-7">
+          <div   className="row" >
+            <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"4rem"}}>
               
               <h1 className="text-display-3  mt-30">
                 A small creative team excited to create beautiful things
@@ -64,7 +65,7 @@ const ProjectsIntro = () => {
               </div>
             </motion.div>
 
-            <div className="col-lg-5 d-none d-lg-block ">
+            <div className="col-lg-5  d-lg-block " style={{padding:"1rem"}}>
               <motion.div  animate={right}
                 className="banner-imgs "
                 style={{ height: "65vh"}}

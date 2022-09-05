@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import Preloader from '../components/elements/Preloader';
 import 'react-modal-video/css/modal-video.css';
 import Head from '../components/Head/Head'
+import { AnimatePresence } from 'framer-motion'
+
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -20,11 +22,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head />
+    <AnimatePresence
+                exitBeforeEnter
+                initial={false}
+                onExitComplete={() => window.scrollTo(0, 0)}
+            >
       {!loading ? (
         <Component {...pageProps} />
       ) : (
         <Preloader />
       )}
+
+      </AnimatePresence>
 
     </>
   )

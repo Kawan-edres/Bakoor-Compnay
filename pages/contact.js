@@ -38,15 +38,15 @@ function Contact() {
     return (
         <>
             <Layout>
-                <section className="section-box">
+                <section   className="section-box">
                     <div className="banner-hero banner-breadcrums">
                         <div className="container text-center">
                             <h1 className="text-heading-2 color-gray-1000">Contact Us</h1>
                         </div>
                     </div>
                 </section>
-                <section className="section-box">
-                    <motion.div ref={ref} animate={right } className="container mb-50    ">
+                <section ref={ref}  className="section-box">
+                    <motion.div  animate={right } className="container mb-50    ">
                         <div className="bdrd-58 box-gray-100 icon-wave">
                             <div className="row">
                                 <div className="col-lg-12 mb-60"><span className="text-body-capitalized text-uppercase">Contact us</span>

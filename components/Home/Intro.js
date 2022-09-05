@@ -4,32 +4,33 @@ import banner from "../../public/assets/imgs/Home/background2.png";
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import {motion} from 'framer-motion'
+import { useEffect } from "react";
 
 
 const Intro = () => {
+  
+
   const { ref, inView, } = useInView({
     /* Optional options */
-    threshold: 0,
+    threshold: 0.3,
   });
 
   const right=useAnimation();
   const left=useAnimation();
 
-    // intro animation
-    if(inView){
+  useEffect(()=>{
+     if(inView){
       right.start({
         scale:1.1,
         opacity: 1,
-        transition:{duration:1 }
+        transition:{duration:.7}
       });
-//     photo animation 
       left.start({
         x:0,
         opacity: 1,
-        transition: { duration:1},
+        transition: { duration:.7},
       });
-
-    }
+}
 
     
     if(!inView){
@@ -38,13 +39,16 @@ const Intro = () => {
     }
 
 
+  },[inView])
+   
+
     return (
-        <section className="section-box mt-15">
+        <section ref={ref}  className="section-box mt-15">
         <div className="banner-hero banner-1">
           <div className="container">
-            <motion.div className="row">
+            <motion.div className="row" >
             {/* left */}
-              <motion.div animate={left} ref={ref} className="col-lg-7">
+              <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"3rem"}}>
                 <h1  className="text-display-2">
                   We are
                   <span className="color-green-900">awesome team</span>
@@ -64,8 +68,8 @@ const Intro = () => {
                 </div>
               </motion.div>
               {/* right */}
-              <motion.div animate={right} className="col-lg-5 d-none d-lg-block">
-                <div className="banner-imgs">
+              <motion.div animate={right} className="col-lg-5  d-lg-block"  style={{padding:"1rem"}}>
+                <div className="banner-imgs" >
                   <Image
       
                     priority
@@ -75,6 +79,7 @@ const Intro = () => {
                     alt="home-background "
                     src={banner}
                     placeholder="blur"
+                   
                   />
                 </div>
               </motion.div>

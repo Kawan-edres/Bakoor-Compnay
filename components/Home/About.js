@@ -4,7 +4,7 @@ const About = () => {
             <div className="row">
               <div className="col-lg-2 col-sm-1 col-12" />
               <div className="col-lg-8 col-sm-10 col-12 text-center mt-70">
-                <h2 className="text-heading color-gray-900">
+                <h2 className="text-heading-1 color-gray-900 about-text">
                   About Bakoor Company
                 </h2>
                 <p className="text-body-lead-large color-gray-600 mt-20">
