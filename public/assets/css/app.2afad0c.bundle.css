@@ -25539,7 +25539,7 @@ label {
     font-family: "Chivo", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 22px;
     color: #101828;
     display: block;
     padding: 30px 22px 30px 22px;
@@ -26138,7 +26138,7 @@ label {
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     top: 45px;
-    right: 27px;
+    right: 100px;
     z-index: 1002
 }
 
@@ -31272,11 +31272,12 @@ input.qty-val {
     }
 
     .burger-icon {
-        top: 25px
+        /* top: 25px */
+        right:50px
     }
 
     .sticky-bar.stick .burger-icon {
-        top: 25px
+        right:50px
     }
 
     .text-heading-1 {
@@ -31472,11 +31473,15 @@ input.qty-val {
     }
 
     .burger-icon {
-        top: 17px
+        top: 45px;
+        right:70px;
     }
 
     .sticky-bar.stick .burger-icon {
-        top: 17px
+        /* top: 17px */
+        top: 45px;
+        right:70px;
+        
     }
 
     .block-img-we-do .block-chart {
@@ -31634,6 +31639,12 @@ input.qty-val {
         margin-left: 10px !important;
         margin-top: 15px
     }
+        .burger-icon{
+            right: 30px;
+        }
+        .sticky-bar.stick .burger-icon {
+            right:30px;
+        }
 
     .bg-service-1 .ml-40 {
         margin-left: 10px !important
@@ -31850,6 +31861,12 @@ input.qty-val {
         margin-bottom: 120px !important
     }
 
+    .burger-icon{
+        right: 20px;
+    }
+    .sticky-bar.stick .burger-icon {
+        right:20px;
+    }
     .box-line-throught {
         padding: 0px 30px
     }

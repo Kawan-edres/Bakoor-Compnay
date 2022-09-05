@@ -46,8 +46,8 @@ const Clients = () => {
 
 
              {clientsData.map((item)=>{
-                return <div key={item.id} className="col-lg-2 col-md-3 col-sm-4 col-4 text-center  box-hover-shadow hover-up">
-                  <Image alt={item.alt} title={item.alt} src={item.img} width={150} height={150} style={{  filter:" grayscale(100%)"}} />
+                return <div key={item.id} className="col-lg-2 col-md-3 col-sm-3 col-4 text-center   ">
+                  <Image alt={item.alt} title={item.alt} src={item.img} width={130} height={130} style={{  filter:" grayscale(100%)"}} />
                 </div>
                 
              })}

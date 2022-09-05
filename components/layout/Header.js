@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import React from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import Logo from '../../public/assets/imgs/Logo/Logo.png'
 
 
 
@@ -29,19 +31,19 @@ const Header = ({ handleOpen, headerStyle,rotate1,rotate2,open}) => {
         <div className="container">
           <div className="main-header">
             <div className="header-left">
-              <div className="header-logo">
+             
                 <Link href="/">
                   <a className="d-flex">
-                    {/* {headerStyle ? (
-                        <img alt="Agon" src="/assets/imgs/Logo/logo.png" />
+                    {headerStyle ? (
+                        <Image alt="Bakoor-Logo" width={100} height={100} src={Logo} />
                         ) : (
-                        <img alt="Agon" src="/assets/imgs/Logo/logo.png" />
-                        )} */}
+                        <Image alt="Bakoor-Logo" width={100} height={100} src={Logo} />
+                        )}
                   </a>
                 </Link>
-              </div>
+                          
               <div className="header-nav">
-                <nav className="nav-main-menu d-none d-xl-block">
+                <nav className="nav-main-menu d-none d-md-block">
                   <ul className="main-menu">
                     <li className="has-children">
                       <Link href="/">
