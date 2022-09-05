@@ -1,0 +1,84 @@
+.category{
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-column-gap:2rem;
+    grid-row-gap: 2rem;
+    overflow: hidden;
+  }
+  .categoryImgContainer{
+    width: 20rem;
+    height: 23rem;
+    position: relative;
+    /* margin: 0 auto; */
+    cursor: pointer;
+  }
+  .projects-mlozm{
+    box-shadow: 0 5px 10px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    position: absolute;
+    bottom: -145px;
+    left: 17%;
+	right: 17%;
+    width: 65%;
+	height: 33%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: all .3s ease 0s;
+    opacity: 0;
+    visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  border-radius: 16px;
+  cursor: pointer;
+   
+  }
+  .projects-mlozm h4{
+    font-size: 1rem;
+    cursor: pointer;
+
+  }
+  .categoryImgContainer:hover  .projects-mlozm{
+    visibility: visible;
+    opacity: .8;
+    bottom: 10%;
+    
+  }
+  
+@media (max-width:1700px){
+
+  .category{
+    width: 90%;
+  }
+
+
+}
+@media (max-width:1300px){
+
+  .category{
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+
+  }
+
+
+}
+
+@media (max-width:1050px){
+
+  .category{
+    width: 100%;
+
+
+  }
+  .categoryImgContainer{
+    width: 100%;
+  }
+
+
+}
+ 
