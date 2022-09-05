@@ -47,95 +47,23 @@ const Header = ({ handleOpen, headerStyle,rotate1,rotate2,open}) => {
                       <Link href="/">
                         <a className={router.pathname==="/" ? "nav-active" :""} >Home</a>
                       </Link>
-                      <ul className="sub-menu two-col">
-                        <li>
-                          <Link href="/">
-                            <a>
-                              <i className="fi fi-rr-home" />
-                              Homepage - 1
-                            </a>
-                          </Link>
-                        </li>
-
+                     
                        
 
-                        <li>
-                          <Link href="/index-7">
-                            <a>
-                              <i className="fi fi-rr-home" />
-                              Homepage - 7
-                            </a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/index-8">
-                            <a>
-                              <i className="fi fi-rr-home" />
-                              Homepage - 8
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
                     </li>
                     <li className="has-children">
                       <Link href="/about">
                         <a className={router.pathname==="/about" ? "nav-active" :""}>About</a>
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link href="/about">
-                            <a>
-                              <i className="fi fi-rr-star" />
-                              About Us - 1
-                            </a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/page-about-2">
-                            <a>
-                              <i className="fi fi-rr-star" />
-                              About Us - 2
-                            </a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/page-about-3">
-                            <a>
-                              <i className="fi fi-rr-star" />
-                              About Us - 3
-                            </a>
-                          </Link>
-                        </li>
-                      </ul>
+                      
                     </li>
                     
                     <li className="has-children">
                       <Link href="/projects">
                         <a className={router.pathname==="/projects" ? "nav-active" :""}>Projects </a>
                       </Link>
-                      <ul className="sub-menu">
-                        <li>
-                          <Link href="/page-contact">
-                            <a>Construction</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/page-contact">
-                            <a> Genera trading</a>
-                          </Link>
-                        </li>
-
-                        <li>
-                          <Link href="/404">
-                            <a>Water</a>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="/404">
-                            <a>Hyper Market</a>
-                          </Link>
-                        </li>
-                      </ul>
+                      
+                  
                     </li>
 
                     <li className="has-children">

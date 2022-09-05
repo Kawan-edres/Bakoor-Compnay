@@ -50,7 +50,7 @@ const Projects = () => {
     };
 
 
-  },[activeIndex,inView])
+  },[activeIndex,inView,left,right])
    
 
   return (

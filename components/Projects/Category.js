@@ -9,9 +9,9 @@ const Category = ({ filterData }) => {
     <motion.div layout className={classes.category}>
       {filterData.map((item) => {
         return (
-          <AnimatePresence>
+          <AnimatePresence key={item.id}>
             <Link href={"/"}>
-              <motion.div
+              <motion.div 
                 layout
                 animate={{ opacity: 1, scale: 1 }}
                 intial={{ opacity: 0, scale: 0 }}
