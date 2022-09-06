@@ -43,7 +43,7 @@ const Intro = () => {
    
 
     return (
-        <section ref={ref}  className="section-box mt-15">
+        <section ref={ref}  className="section-box">
         <div className="banner-hero banner-1">
           <div className="container">
             <motion.div className="row" >

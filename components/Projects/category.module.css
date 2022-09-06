@@ -81,4 +81,18 @@
 
 
 }
+
+@media(max-width:768px){
+
+  .projects-mlozm{
+ 
+    position: absolute;
+    bottom: 10%;
+    opacity: .8;
+    visibility: visible;
+
+   
+  }
+
+}
  

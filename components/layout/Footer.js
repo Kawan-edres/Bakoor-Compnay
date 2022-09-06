@@ -13,14 +13,20 @@ const Footer = () => {
                 Iraq , Erbil-Ankawa, Close to Ankawa Palace
               </div>
               <p className="text-body-text  ">
-                <a className="color-gray-600" href="tel:+964 750 445 0404">+964 750 445 0404</a>
+                <a className="color-gray-600" href="tel:+964 750 445 0404">
+                  +964 750 445 0404
+                </a>
               </p>
               <p className="text-body-text color-gray-600 ">
-                <a className="color-gray-600" href="tel:+964 750 378 8980">+964 750 378 8980</a>
+                <a className="color-gray-600" href="tel:+964 750 378 8980">
+                  +964 750 378 8980
+                </a>
               </p>
               <p className="text-body-text  ">
                 {" "}
-                <a className="color-gray-600" href="info@bakoorcompany.com">info@bakoorcompany.com</a>
+                <a className="color-gray-600" href="info@bakoorcompany.com">
+                  info@bakoorcompany.com
+                </a>
               </p>
             </div>
             <div className="col-lg-3 width-20 mb-30">
@@ -46,8 +52,6 @@ const Footer = () => {
                     <a>Contact</a>
                   </Link>
                 </li>
-               
-               
               </ul>
             </div>
             <div className="col-lg-3 width-20 mb-30">
@@ -69,11 +73,13 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link scroll={false} href="https://www.facebook.com/Erbilsunhotel/">
+                  <Link
+                    scroll={false}
+                    href="https://www.facebook.com/Erbilsunhotel/"
+                  >
                     <a>Erbil Sun Hotel</a>
                   </Link>
                 </li>
-                
               </ul>
             </div>
 
@@ -81,41 +87,47 @@ const Footer = () => {
               <h4 className="text-heading-5">Useful links</h4>
               <ul className="menu-footer mt-20">
                 <li>
-                  <Link href="/#">
-                    <a>Request an offer</a>
+                  <Link href="/projects#construction">
+                    <a>Construction</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>How it works</a>
+                  <Link href="/projects#general-trading">
+                    <a>General Trading</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/page-pricing-2">
-                    <a>Pricing</a>
+                  <Link href="/projects#water">
+                    <a>Bakoor Water</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>Reviews</a>
+                  <Link href="/projects#market">
+                    <a>Bakoor Market</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="/#">
-                    <a>Stories</a>
-                  </Link>
-                </li>
+               
               </ul>
             </div>
           </div>
           <div className="footer-bottom mt-20">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-4 mb-20">
+                <span className="color-gray-400 text-body-lead ">
+                  Developed by{" "}
+                  <a href="http://devspace.krd" target="_blank">
+                    DevSpace
+                  </a>
+                </span>
+              </div>
+
+              <div className="col-md-4 mb-20">
                 <span className="color-gray-400 text-body-lead">
                   © Bakoor Official 2022 , All Rights Reserved
                 </span>
               </div>
-              <div className="col-md-6 text-center text-lg-end text-md-end">
+
+              <div className="col-md-4 text-center text-lg-end text-md-end">
                 <div className="footer-social">
                   <Link href="https://www.facebook.com/BakoorCompany">
                     <a

@@ -3,11 +3,14 @@
 import Image from "next/image";
 import React from "react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
-import { Swiper, SwiperSlide, Keyboard, Pagination } from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react";
 import { projectsData } from "../Data/Home/projectsData";
+import {useRouter} from 'next/router'
+
 
 SwiperCore.use([Autoplay, Navigation]);
 const TestimonialSlider = () => {
+  const router=useRouter()
   return (
     <>
       <div className="box-swiper">
@@ -41,8 +44,9 @@ const TestimonialSlider = () => {
               <SwiperSlide key={item.id}>
                 <div
                   // className="swiper-slide active"
-                  style={{ margin: "0 auto" }}
+                  style={{ margin: "0 auto",cursor:"pointer" }}
                   // className='cardd'
+                  onClick={()=>router.push('/projects#water')}
                 >
                   <div className="col-lg-12 col-md-12 col-sm-12 col-12  mt-20  box-hover-shadow hover-up bg-7 mlozm cardd bdr-16">
                     <Image

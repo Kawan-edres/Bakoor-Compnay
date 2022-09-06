@@ -103,11 +103,11 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
               </div>
 
               <div className="site-copyright color-gray-400">
-                Copyright 2022 © Bakoor Web Site
+                Copyright 2022 © 
                 <br />
-                Designed by
+                Developed by
                 <Link href="http://devspace.krd">
-                  <a target="_blank"> DevSpace</a>
+                  <a className="text-bold" target="_blank"> DevSpace</a>
                 </Link>
               </div>
             </div>

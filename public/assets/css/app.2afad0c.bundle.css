@@ -25460,7 +25460,7 @@ label {
 }
 
 .header {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     float: left;
     width: 100%;
     position: relative
@@ -25663,7 +25663,7 @@ label {
 }
 
 .header.stick {
-    padding: 10px 0px
+    /* padding: 10px 0px     */
 }
 
 .header.header-2 {
@@ -25695,7 +25695,7 @@ label {
 }
 
 .sticky-bar.stick .burger-icon {
-    top: 45px
+    top: 35px
 }
 
 .user-account {
@@ -26138,7 +26138,7 @@ label {
     cursor: pointer;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    top: 45px;
+    top: 35px;
     right: 100px;
     z-index: 1002
 }
@@ -31474,13 +31474,13 @@ input.qty-val {
     }
 
     .burger-icon {
-        top: 45px;
+        top: 35px;
         right:70px;
     }
 
     .sticky-bar.stick .burger-icon {
         /* top: 17px */
-        top: 45px;
+        top: 35px;
         right:70px;
         
     }
@@ -31577,11 +31577,11 @@ input.qty-val {
 
 @media (max-width: 575.98px) {
     .header {
-        padding: 15px 0
+        /* padding: 15px 0 */
     }
 
     .header.stick {
-        padding: 15px 0
+        /* padding: 15px 0 */
     }
 
     .text-display-2 {
@@ -31642,9 +31642,11 @@ input.qty-val {
     }
         .burger-icon{
             right: 30px;
+            top: 35px;
         }
         .sticky-bar.stick .burger-icon {
             right:30px;
+            top: 35px;
         }
 
     .bg-service-1 .ml-40 {
@@ -31863,10 +31865,13 @@ input.qty-val {
     }
 
     .burger-icon{
+        top: 30px;
         right: 20px;
     }
     .sticky-bar.stick .burger-icon {
         right:20px;
+        top: 30px;
+
     }
     .box-line-throught {
         padding: 0px 30px

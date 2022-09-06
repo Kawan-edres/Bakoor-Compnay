@@ -98,4 +98,15 @@
 	right: 100px !important;
 
 	}
+
+	.card-mlozm{
+		
+    position: absolute;
+    bottom: 10%;
+   
+    opacity: .8;
+    visibility: visible;
+	
+
+	}
 }
