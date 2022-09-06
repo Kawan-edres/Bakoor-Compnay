@@ -115,7 +115,7 @@ const Footer = () => {
               <div className="col-md-4 mb-20">
                 <span className="color-gray-400 text-body-lead ">
                   Developed by{" "}
-                  <a href="http://devspace.krd" target="_blank">
+                  <a href="http://devspace.krd" target="_blank" rel="noreferrer">
                     DevSpace
                   </a>
                 </span>
