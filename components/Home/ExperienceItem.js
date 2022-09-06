@@ -18,7 +18,7 @@ const ExperienceItem = (props) => {
            {props.description}
           </p>
           <div className="mt-30">
-            <Link href="/page-about-1">
+            <Link href="/projects">
               <a className="btn btn-default btn-white icon-arrow-right">
                 Learn more
               </a>

@@ -8,7 +8,6 @@ import AboutGelery from "../components/About/AboutGelery";
 import Intro from "../components/About/AboutIntro";
 import AboutOthers from "../components/About/AboutOthers";
 import AboutSolutions from "../components/About/AboutSolutions";
-import AboutVideo from "../components/About/AboutVideo";
 import About from '../components/Home/About'
 import Layout from "../components/layout/Layout";
 
@@ -29,10 +28,10 @@ function About1() {
         
       
        <AboutOthers />
-        {/* <AboutVideo />   */}
+     
        <AboutClients />
         <AboutSolutions />
-        {/* <Blog /> */}
+        
       
 
          

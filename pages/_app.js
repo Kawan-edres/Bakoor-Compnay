@@ -7,7 +7,7 @@ import Head from '../components/Head/Head'
 import { AnimatePresence } from 'framer-motion'
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

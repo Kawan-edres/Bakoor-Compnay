@@ -17,7 +17,7 @@ export const aboutSolutions=[
         img:worker,
         alt:"Construction",
         title:"1- Construction",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"Bakoor Company for Construction and General Trading is a recognized industry leader in construction management.",
 
     },
     {
@@ -25,7 +25,7 @@ export const aboutSolutions=[
         img:road,
         alt:"road",
         title:"2- Road Construction",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description: "Bakoor Company for Road Development is a recognized industry leader in Road Development.",
 
     },
     {
@@ -33,7 +33,7 @@ export const aboutSolutions=[
         img:hospital,
         alt:"hospital",
         title:"3- Hospital",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description: "The 6 story hospital will have the latest technology devices to serve the community.",
 
     },
     {
@@ -41,7 +41,7 @@ export const aboutSolutions=[
         img:water,
         alt:"water",
         title:"4- Water Mineral",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:  "Bakoor has a quality natural water. The water is processed and purified with the best European equipment available in Erbil Province of Kurdistan.",
 
     },
     {
@@ -49,7 +49,7 @@ export const aboutSolutions=[
         img:pipe,
         alt:"pipe",
         title:"5- Pipe Ironing",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"Bakoor Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
 
     },
     {
@@ -57,7 +57,7 @@ export const aboutSolutions=[
         img:market,
         alt:"market",
         title:"6- Hyper Market",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"Few markets in Erbil have so many items as we do, from food, kitchen appliances, cloths, stationary, kids toys and games, Gifts, Cosmetics and so on.",
 
     },
     {
@@ -65,7 +65,7 @@ export const aboutSolutions=[
         img:gas,
         alt:"gas",
         title:"7- Gas Station",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description: "Bakoor Company for construction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
 
     },
     {
@@ -73,7 +73,7 @@ export const aboutSolutions=[
         img:hotel,
         alt:"hotel",
         title:"8- Hotel",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"Bakoor Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
 
     },
     {
@@ -81,7 +81,7 @@ export const aboutSolutions=[
         img:waterpipe,
         alt:"waterpipe",
         title:"9- Water supply",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"Bakoor Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
 
     },
     {
@@ -89,7 +89,7 @@ export const aboutSolutions=[
         img:stone,
         alt:"crushed stone",
         title:"11- Crushed stone",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description:"We have Crushed Stones or (Angular Rocks) for all your construction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
 
     },
     {
@@ -97,7 +97,7 @@ export const aboutSolutions=[
         img:roof,
         alt:"steel roof",
         title:"11- Steel Roof",
-        description:"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit laborum — semper quis lectus nulla."
+        description: " You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
 
     }
 

@@ -12,7 +12,7 @@ export const aboutOthersData=[
     {
         id:1,
         title:"Construction",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:"Bakoor Company for Construction and General Trading is a recognized industry leader in construction management.",
         img:contruction,
         alt:"hotel",
         bg:"bg-1"
@@ -20,7 +20,7 @@ export const aboutOthersData=[
     {
         id:2,
         title:"Crushed Stone",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:"We have Crushed Stones or (Angular Rocks) for all your construction needs",
         img:crushedStone,
         alt:"crushed stone",
         bg:"bg-2"
@@ -29,7 +29,7 @@ export const aboutOthersData=[
     {
         id:3,
         title:"Ductile Iron Pipes",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:"Bakoor Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
         img:pipe,
         alt:"Ductile Iron Pipes",
         bg:"bg-3"
@@ -38,7 +38,7 @@ export const aboutOthersData=[
     {
         id:4,
         title:"Road Development",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description: "Bakoor Company for Road Development is a recognized industry leader in Road Development.",
         img:road,
         alt:"Road Development",
         bg:"bg-4"
@@ -47,7 +47,7 @@ export const aboutOthersData=[
     {
         id:5,
         title:"Gas Station",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description: "Bakoor Company for construction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
         img:gas,
         alt:"bakoor water",
         bg:"bg-5"
@@ -56,7 +56,7 @@ export const aboutOthersData=[
     {
         id:6,
         title:"Bakoor Hyper Market",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:"Few markets in Erbil have so many items as we do, from food, kitchen appliances, cloths, stationary, kids toys and games, Gifts, Cosmetics and so on.",
         img:two,
         alt:"hyper-market",
         bg:"bg-6"
@@ -65,7 +65,7 @@ export const aboutOthersData=[
     {
         id:7,
         title:"Mineral Water",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:  "Bakoor has a quality natural water. The water is processed and purified with the best European equipment available in Erbil Province of Kurdistan.",
         img:glass,
         alt:"bakoor water",
         bg:"bg-7"
@@ -75,7 +75,7 @@ export const aboutOthersData=[
     {
         id:8,
         title:"Sun Hotel",
-        description:"Your site is not complete with only landings. Get essential inner pages using our ready demos.",
+        description:"Bakoor Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
         img:hotel,
         alt:"hotel",
         bg:"bg-8"

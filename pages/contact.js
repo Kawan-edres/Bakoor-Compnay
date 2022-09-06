@@ -55,10 +55,10 @@ function Contact() {
                                 </div>
                                 <div className="col-lg-4 mb-40">
                                     <h4 className="text-heading-6 color-gray-900 icon-home mb-10 mt-10">Bakoor Company</h4>
-                                    <p className="text-body-text color-gray-600">Iraq , Erbil-Ankawa<br /> Close to Ankawa Palace</p>
-                                    <p className="text-body-text color-gray-600">+964 750 445 0404</p>
-                                    <p className="text-body-text color-gray-600">+964 750 378 8980</p>
-                                    <p className="text-body-text color-gray-600">info@bakoorcompany.com</p>
+                                    <p className="text-body-text color-gray-600"><a href="#map">Iraq , Erbil-Ankawa<br /> Close to Ankawa Palace</a></p>
+                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 445 0404">+964 750 445 0404</a></p>
+                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 378 8980">+964 750 378 8980</a></p>
+                                    <p className="text-body-text color-gray-600 "> <a href="info@bakoorcompany.com">info@bakoorcompany.com</a></p>
                                 </div>
                                
                                <Form />

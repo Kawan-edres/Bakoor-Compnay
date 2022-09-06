@@ -44,11 +44,10 @@ const Intro = () => {
             <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"3rem"}}>
               
               <h1 className="text-display-3 mt-30">
-                A small creative team excited to create beautiful things
+                Bakoor Company experienced and most creative Company
               </h1>
               <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                Integrated workflow designed for product teams. We create
-                world-class development and branding
+               We expand our projects and activities, and enhance them to suit the needs and requirements for everyone.
               </p>
               <div className="mt-40">
                 <Link href="/contact">

@@ -23,10 +23,10 @@ const AboutOthers = () => {
                 {aboutOthersData.map((item)=>{
                     return(
                     <div key={item.id} className="col-lg-6 col-sm-12 about-others-card">
-                    <div className={`${item.bg} box-square hover-up`}>
+                    <div className={`${item.bg} box-square hover-up mb-20`}>
                         <h4 className="text-heading-4 color-gray-900 mb-15">{item.title}</h4>
                         <p className="text-body-text-md color-gray-600">{item.description}</p>
-                        <div className="box-image-inner  "><Image className="bdrd-16" height={350} width={500} src={item.img} alt={item.alt} title={item.alt} placeholder="blur" /></div>
+                        <div className="box-image-inner "><Image className="bdrd-16" height={350} width={500} src={item.img} alt={item.alt} title={item.alt} placeholder="blur" /></div>
                     </div>
                 </div>
                     )

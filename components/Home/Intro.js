@@ -48,15 +48,18 @@ const Intro = () => {
           <div className="container">
             <motion.div className="row" >
             {/* left */}
+              
               <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"3rem"}}>
-                <h1  className="text-display-2">
-                  We are
-                  <span className="color-green-900">awesome team</span>
-                  for your business dream
+                <h1  className="text-display-3">
+                   Bakoor Company for   
+                  <span className="color-green-900">Construction</span> <br />
+                  and <br />
+                  <span className="color-green-900">General</span>
+
+                   Trading
                 </h1>
                 <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                  Integrated workflow designed for product teams. We create
-                  world-class development and branding
+                Bakoor Company has its eye on the future. Our mission is to deliver the best quality service to our customers.
                 </p>
                 <div className="mt-40">
                   <Link href="/about">

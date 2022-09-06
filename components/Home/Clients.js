@@ -39,7 +39,7 @@ const Clients = () => {
         <div ref={ref} className="section-box overflow-visible  mt-100 text-center  ">
         <div className="container  text ">
         <motion.h2 animate={left} className="text-heading-3 text-center color-gray-900 mb-60">
-                              Trusted by the world’s leading companies
+                              Trusted by the Enormous Leading Companies
                           </motion.h2>
           <motion.div animate={right} className="row justify-content-center">
 

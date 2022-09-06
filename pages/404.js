@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
 
@@ -11,7 +10,7 @@ function Error() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mt-40">
-                                <img className="img-responsive" src="assets/imgs/template/404.png" alt="Agon" />
+                                <img className="img-responsive" src="assets/imgs/template/404.png" alt="not-found-image" />
                                 <h2 className="text-heading-1 color-gray-900 mb-20 mt-50">
                                     Whoops! That page doesn’t exist.
                                 </h2>

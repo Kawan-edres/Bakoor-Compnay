@@ -24935,13 +24935,14 @@ label {
     animation: load7 1.8s infinite ease-in-out;
     color: #101828;
     font-size: 10px;
-    margin: 80px auto;
+    margin: 0px auto !important;
     position: relative;
     text-indent: -9999em;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-animation-delay: -0.16s;
-    animation-delay: -0.16s
+    animation-delay: -0.16s;
+   
 }
 
 .loader:before {

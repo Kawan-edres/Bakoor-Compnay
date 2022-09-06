@@ -26,6 +26,11 @@ const Buttons = ({orginalData,setFilterData,type,setType}) => {
                 ? "btn btn-default btn-bd-green-hover btn-select active"
                 : "btn btn-default btn-bd-green-hover btn-select"
             } onClick={()=>handleOnClick("construction")} >Construction</button>
+               <button className={
+            type === "general-trading"
+                ? "btn btn-default btn-bd-green-hover btn-select active"
+                : "btn btn-default btn-bd-green-hover btn-select"
+            } onClick={()=>handleOnClick("construction")} >General Trading</button>
           <button className={
             type === "water"
                 ? "btn btn-default btn-bd-green-hover btn-select active"

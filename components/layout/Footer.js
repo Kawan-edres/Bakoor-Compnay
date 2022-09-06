@@ -3,92 +3,77 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="footer " >
-        <div className="container pt-30 " >
-
-        {/* <div className="footer-top "> </div> */}
+      <footer className="footer ">
+        <div className="container pt-30 ">
+          {/* <div className="footer-top "> </div> */}
           <div className="row ">
             <div className="col-lg-3 width-20 mb-30">
               <h4 className="text-heading-5">Contact</h4>
               <div className="mt-20 text-body-text color-gray-600 mb-20">
-              Iraq , Erbil-Ankawa, Close to Ankawa Palace
+                Iraq , Erbil-Ankawa, Close to Ankawa Palace
               </div>
-              <div className="mt-20 text-body-text color-gray-600">
-              +964 750 445 0404 <br />
-              +964 750 378 8980
-              </div>
-              <div className="text-body-text color-gray-600">
-              info@bakoorcompany.com
-              </div>
+              <p className="text-body-text  ">
+                <a className="color-gray-600" href="tel:+964 750 445 0404">+964 750 445 0404</a>
+              </p>
+              <p className="text-body-text color-gray-600 ">
+                <a className="color-gray-600" href="tel:+964 750 378 8980">+964 750 378 8980</a>
+              </p>
+              <p className="text-body-text  ">
+                {" "}
+                <a className="color-gray-600" href="info@bakoorcompany.com">info@bakoorcompany.com</a>
+              </p>
             </div>
             <div className="col-lg-3 width-20 mb-30">
-              <h4 className="text-heading-5">About Us</h4>
+              <h4 className="text-heading-5">Pages</h4>
               <ul className="menu-footer mt-20">
                 <li>
-                  <Link href="/#">
-                    <a>Mission &amp; Vision</a>
+                  <Link href="/">
+                    <a>Home</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>Our Team</a>
+                  <Link href="/about">
+                    <a>About</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/page-career">
-                    <a>Careers</a>
+                  <Link href="/projects">
+                    <a>Projects</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>Press &amp; Media</a>
+                  <Link href="/contact">
+                    <a>Contact</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="/#">
-                    <a>Advertising</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <a>Testimonials</a>
-                  </Link>
-                </li>
+               
+               
               </ul>
             </div>
             <div className="col-lg-3 width-20 mb-30">
-              <h4 className="text-heading-5">Discover</h4>
+              <h4 className="text-heading-5">Social Medias</h4>
               <ul className="menu-footer mt-20">
                 <li>
-                  <Link href="/blog-2">
-                    <a>Our Blog</a>
+                  <Link href="https://www.facebook.com/BakoorCompany">
+                    <a>Facebook</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/page-pricing-1">
-                    <a>Plans &amp; Pricing</a>
+                  <Link href="https://twitter.com/BakoorCompany">
+                    <a>Twitter</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>Knowledge Base</a>
+                  <Link href="https://www.facebook.com/Bakoor.co/">
+                    <a>Bakoor Water</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
-                    <a>Cookie Policy</a>
+                  <Link scroll={false} href="https://www.facebook.com/Erbilsunhotel/">
+                    <a>Erbil Sun Hotel</a>
                   </Link>
                 </li>
-                <li>
-                  <Link href="/#">
-                    <a>Office Center</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/blog-1">
-                    <a>News &amp; Events</a>
-                  </Link>
-                </li>
+                
               </ul>
             </div>
 
@@ -127,22 +112,22 @@ const Footer = () => {
             <div className="row">
               <div className="col-md-6">
                 <span className="color-gray-400 text-body-lead">
-                  © Bakoor Official 2022 ,  All Rights Reserved
+                  © Bakoor Official 2022 , All Rights Reserved
                 </span>
-
-                <Link href="/page-terms">
-                  <a className="text-body-text color-gray-400 ml-50">
-                    Terms of service
-                  </a>
-                </Link>
               </div>
               <div className="col-md-6 text-center text-lg-end text-md-end">
                 <div className="footer-social">
                   <Link href="https://www.facebook.com/BakoorCompany">
-                    <a target="_blank" className="icon-socials icon-facebook"></a>
+                    <a
+                      target="_blank"
+                      className="icon-socials icon-facebook"
+                    ></a>
                   </Link>
                   <Link href="https://twitter.com/BakoorCompany">
-                    <a target="_blank" className="icon-socials icon-twitter"></a>
+                    <a
+                      target="_blank"
+                      className="icon-socials icon-twitter"
+                    ></a>
                   </Link>
                   {/* <Link href="https://www.instagram.com">
                     <a className="icon-socials icon-instagram"></a>
@@ -155,7 +140,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
       </footer>
     </>
   );
