@@ -25,14 +25,14 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
   return (
     <>
       <div
-        className={`mobile-header-active mobile-header-wrapper-style perfect-scrollbar ${openClass}`}
+        className={`mobile-header-active mobile-header-wrapper-style perfect-scrollbar  ${openClass}`}
       >
         <PerfectScrollbar className="mobile-header-wrapper-inner">
-          <div className="mobile-header-top">
+          <div className="mobile-header-top ">
             <div className="user-account">
               {/* <img src="/assets/imgs/template/ava_1.png" alt="Agon" /> */}
-              <div className="content">
-                <h6 className="user-name">
+              <div className="content ">
+                <h6 className="user-name mt-50">
                   Bakoor <span className="text-brand">Web Site </span>
                 </h6>
                 <div
