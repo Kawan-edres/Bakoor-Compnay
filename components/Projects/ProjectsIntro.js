@@ -50,11 +50,10 @@ const ProjectsIntro = () => {
             <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"4rem"}}>
               
               <h1 className="text-display-3  mt-30">
-                A small creative team excited to create beautiful things
+                A huge creative team excited to create the Best Projects
               </h1>
               <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-                Integrated workflow designed for product teams. We create
-                world-class development and branding
+               Our 200 completed and under construction projects of our company
               </p>
               <div className="mt-40">
                 <Link href="/contact">

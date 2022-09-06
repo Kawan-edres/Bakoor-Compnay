@@ -71,21 +71,23 @@ const Intro = () => {
                 </div>
               </motion.div>
               {/* right */}
-              <motion.div animate={right} className="col-lg-5  d-lg-block"  style={{padding:"1rem"}}>
-                <div className="banner-imgs" >
-                  <Image
-      
-                    priority
-                    layout="fill"
-                    objectFit="cover"
-                    className="bdrd-16 shape-2 "
-                    alt="home-background "
-                    src={banner}
-                    placeholder="blur"
-                   
-                  />
-                </div>
+              <div className="col-lg-5  d-lg-block  " style={{padding:"1rem"}}>
+              <motion.div  animate={right}
+                className="banner-imgs "
+                style={{ height: "65vh"}}
+              >
+                <Image
+                  priority
+                  layout="fill"
+                  objectFit="cover"
+                  className="bdrd-16 shape-2 "
+                  alt="home-background "
+                  src={banner}
+                  placeholder="blur"
+
+                />
               </motion.div>
+            </div>
             </motion.div>
           </div>
         </div>
