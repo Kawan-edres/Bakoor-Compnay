@@ -35,24 +35,25 @@ const Extra = () => {
   return (
     <section className="section-box mt-100 mb-100">
       <div className="container ">
-        <div ref={ref} className="row">
+        <div ref={ref} className="row" style={{padding: "0 1.5rem"}}>
           <motion.div
-            style={{ padding: "1.5rem" }}
+            style={{  margin: "1.5rem",position:"relative",height:"70vh" }}
             animate={left}
-            className="col-lg-6 col-sm-12 block-img-we-do "
+            className="col-lg-6 block-img-we-do "
           >
             <Image
               className="bdrd-16"
               src={Civil}
-              width={800}
-              height={900}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="right"
               alt="Construction Image"
               placeholder="blur"
             />
           </motion.div>
           <motion.div
             animate={right}
-            className="col-lg-6 col-sm-12 block-we-do"
+            className="col-lg-5 block-we-do"
           >
             <h3 className="text-heading-1 mt-30">19 Years of Experience</h3>
             <p className="text-body-lead-large color-gray-600 mt-30">

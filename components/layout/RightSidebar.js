@@ -13,18 +13,7 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
     key: "",
   });
 
-  const handleToggle = (key) => {
-    if (isActive.key === key) {
-      setIsActive({
-        status: false,
-      });
-    } else {
-      setIsActive({
-        status: true,
-        key,
-      });
-    }
-  };
+
   return (
     <>
       <div
