@@ -1,0 +1,15 @@
+.svg{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 1;
+    opacity: .5;
+  
+}
+
+@media(max-width:1000px){
+    .svg{
+        /* display: none; */
+        top: 300px;
+    }
+}

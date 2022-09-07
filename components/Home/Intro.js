@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 import {motion} from 'framer-motion'
 import { useEffect } from "react";
+import Wave from "./Wave";
 
 
 const Intro = () => {
@@ -26,7 +27,7 @@ const Intro = () => {
         transition:{duration:.7}
       });
       left.start({
-        x:0,
+        y:0,
         opacity: 1,
         transition: { duration:.7},
       });
@@ -35,7 +36,7 @@ const Intro = () => {
     
     if(!inView){
       right.start({scale:0,opacity:0});
-      left.start({x:-1000,opacity:0});
+      left.start({y:-1000,opacity:0});
     }
 
 
@@ -43,6 +44,7 @@ const Intro = () => {
    
 
     return (
+      
         <section ref={ref}  className="section-box">
         <div className="banner-hero banner-1">
           <div className="container">
@@ -90,10 +92,13 @@ const Intro = () => {
             </div>
             </motion.div>
           </div>
+        <Wave />
         </div>
 
 
+
       </section>
+        
     );
 }
 
