@@ -23122,7 +23122,7 @@ textarea.form-control {
     line-height: 20px;
     width: 100%;
     border-radius: 0px;
-    color: #98A2B3
+    color: #000;
 }
 
 textarea.form-control:focus {

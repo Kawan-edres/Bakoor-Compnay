@@ -3,8 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
+import { useRouter } from "next/router";
 
 const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
+  const router=useRouter();
+
   const [isActive, setIsActive] = useState({
     status: false,
     key: "",
@@ -52,13 +55,11 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
                   <ul className="mobile-menu font-heading">
                     <li
                       className={
-                        isActive.key == 1
-                          ? "has-children active"
-                          : "has-children"
+                       "has-children"
                       }
                     >
                       <Link href="/">
-                        <a className="active">Home</a>
+                        <a className={router.pathname==="/" ? "nav-active" :""}>Home</a>
                       </Link>
                     </li>
 
@@ -70,7 +71,7 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
                       }
                     >
                       <Link href="/about">
-                        <a>About</a>
+                        <a className={router.pathname==="/about" ? "nav-active" :""}>About</a>
                       </Link>
                     </li>
 
@@ -82,7 +83,7 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
                       }
                     >
                       <Link href="/projects">
-                        <a>Projects</a>
+                        <a className={router.pathname==="/projects" ? "nav-active" :""}>Projects</a>
                       </Link>
                     </li>
 
@@ -94,7 +95,7 @@ const RightSidebar = ({ openClass,handleOpen,rotate1,rotate2 }) => {
                       }
                     >
                       <Link href="/contact">
-                      <a>Contact</a>
+                      <a className={router.pathname==="/contact" ? "nav-active" :""}>Contact</a>
                       </Link>
                     </li>
                       

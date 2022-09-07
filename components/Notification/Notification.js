@@ -19,7 +19,7 @@ function Notification(props) {
 
   return (
     <div className={cssClasses}>
-      <p>Your hello </p>
+      <p>Your {message} </p>
     </div>
 
     

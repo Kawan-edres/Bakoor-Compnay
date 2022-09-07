@@ -19,7 +19,7 @@ const Footer = () => {
               </p>
               <p className="text-body-text color-gray-600 ">
                 <a className="color-gray-600" href="tel:+964 750 378 8980">
-                  +964 750 378 8980
+                  +964 750 378 8980 
                 </a>
               </p>
               <p className="text-body-text  ">
@@ -133,12 +133,14 @@ const Footer = () => {
                     <a
                       target="_blank"
                       className="icon-socials icon-facebook"
+                      rel="noreferrer"
                     ></a>
                   </Link>
                   <Link href="https://twitter.com/BakoorCompany">
                     <a
                       target="_blank"
                       className="icon-socials icon-twitter"
+                      rel="noreferrer"
                     ></a>
                   </Link>
                   {/* <Link href="https://www.instagram.com">
