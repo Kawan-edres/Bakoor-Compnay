@@ -23,7 +23,7 @@ const Intro = () => {
       });
 //     photo animation 
       left.start({
-        x:0,
+        y:0,
         opacity: 1,
         transition: { duration:1},
       });
@@ -33,7 +33,7 @@ const Intro = () => {
     
     if(!inView){
       right.start({scale:0,opacity:0});
-      left.start({x:-1000,opacity:0});
+      left.start({y:1000,opacity:0});
     }
 
   return (

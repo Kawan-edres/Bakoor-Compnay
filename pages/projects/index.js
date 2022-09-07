@@ -10,10 +10,10 @@ const projects = () => {
     return (
         <Layout>
         <ProjectsIntro />
-        <div className="  pb-100">
+        {/* <div className="  pb-100">
         <AboutGelery img1={img1} img2={img2}  />
 
-        </div>
+        </div> */}
         <Projects />
         </Layout>
     );
