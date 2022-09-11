@@ -25734,7 +25734,7 @@ label {
     top: 0;
     visibility: hidden;
     width: 100%;
-    cursor: crosshair;
+    /* cursor: crosshair; */
     z-index: 997
 }
 
@@ -25962,6 +25962,10 @@ label {
     line-height: 38px;
     top: 5px;
     color: #101828
+}
+.mobile-menu li , .mobile-menu a{
+    cursor: pointer;
+
 }
 
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li.has-children .menu-expand i {
@@ -28322,6 +28326,20 @@ label {
 
 .block-img-we-do {
     position: relative;
+    margin-right: 1.5rem !important;
+    height: 35rem !important;
+  
+}
+
+@media (max-width:768px){
+    .block-img-we-do{
+        margin-right: 0rem !important;
+        height: 25rem !important;
+      
+
+    }
+   
+
 }
 
 .block-img-we-do .inner-image {

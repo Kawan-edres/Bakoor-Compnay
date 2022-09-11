@@ -8,40 +8,31 @@ import AboutGelery from "../components/About/AboutGelery";
 import Intro from "../components/About/AboutIntro";
 import AboutOthers from "../components/About/AboutOthers";
 import AboutSolutions from "../components/About/AboutSolutions";
-import About from '../components/Home/About'
+import About from "../components/Home/About";
 import Layout from "../components/layout/Layout";
+import Head from '../components/Head/Head'
 
 // images
-import construction from '../public/assets/imgs/About/gelary1.jpg'
-import road from '../public/assets/imgs/About/gelary2.jpg'
-
+import construction from "../public/assets/imgs/About/gelary1.jpg";
+import road from "../public/assets/imgs/About/gelary2.jpg";
 
 function About1() {
   return (
     <>
       <Layout>
+        {/* <Head canonicalLink="https://devspace.krd" /> */}
+        <Head title="About" />
+
         <Intro />
         <CounterUpBakoor />
         <About />
 
         <AboutGelery img1={construction} img2={road} />
-        
-      
-       <AboutOthers />
-     
-       <AboutClients />
+
+        <AboutOthers />
+
+        <AboutClients />
         <AboutSolutions />
-        
-      
-
-         
-
-
-
-
-
-
-        
       </Layout>
     </>
   );

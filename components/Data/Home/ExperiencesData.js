@@ -17,7 +17,7 @@ export const experiencesData = [
     alt: "construction",
 
     heading: "construction",
-    description:"Bakoor Company for Construction and General Trading is a recognized industry leader in construction management.",
+    description:"BAKOOR Company for Construction and General Trading is a recognized industry leader in construction management.",
     bg: "bg-1",
   },
 
@@ -26,7 +26,7 @@ export const experiencesData = [
     img: road,
     alt: "road",
     heading: "Road",
-    description: "Bakoor Company for Road Development is a recognized industry leader in Road Development.",
+    description: "BAKOOR Company for Road Development is a recognized industry leader in Road Development.",
     bg: "bg-2",
   },
   {
@@ -42,7 +42,7 @@ export const experiencesData = [
     img: water,
     alt: "water",
     heading: "Mineral Water",
-    description:  "Bakoor has a quality natural water. The water is processed and purified with the best European equipment available in Erbil Province of Kurdistan.",
+    description:  "BAKOOR has a quality natural water. The water is processed and purified with the best European equipment available in Erbil Province of Kurdistan.",
     bg: "bg-4",
   },
   {
@@ -50,7 +50,7 @@ export const experiencesData = [
     img: pipe,
     alt: "pipe",
     heading: "Iron Pipes",
-    description:"Bakoor Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
+    description:"BAKOOR Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
     bg: "bg-5",
   },
   {
@@ -66,7 +66,7 @@ export const experiencesData = [
     img: gas,
     alt: "gas",
     heading: "Gas Station",
-    description: "Bakoor Company for construction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
+    description: "BAKOOR Company for construction and general trading also has Gas Station under the name of BAKOOR Gas Station which one of our experiences ",
     bg: "bg-7",
   },
   {
@@ -74,24 +74,17 @@ export const experiencesData = [
     img: hotel,
     alt: "hotel",
     heading: "Hotel",
-    description:"Bakoor Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
+    description:"BAKOOR Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
     bg: "bg-8",
   },
-  {
-    id: 9,
-    img: roof,
-    alt: "roof",
-    heading: "Steel Roof",
-    description: " You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
-    bg: "bg-9",
-  },
+
   {
     id: 10,
     img: waterpipe,
     alt: "waterpipe",
 
     heading: "Water Supply",
-    description:"Bakoor Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
+    description:"BAKOOR Company is the main reseller of the Ductile Iron Pipes in Iraq; we are selling around $5-6 million worth of Ductile Iron Pipes annually national wide.",
     bg: "bg-10",
   },
   {

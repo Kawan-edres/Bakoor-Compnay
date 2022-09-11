@@ -6,7 +6,8 @@ import {motion} from 'framer-motion'
 
 
 
-const Clients = () => {
+const Clients = ({data}) => {
+  console.log(data);
 
 
     const { ref, inView, } = useInView({
@@ -47,7 +48,7 @@ const Clients = () => {
 
              {clientsData.map((item)=>{
                 return <div key={item.id} className="col-lg-2 col-md-3 col-sm-3 col-4 text-center   ">
-                  <Image alt={item.alt} title={item.alt} src={item.img} width={130} height={130} style={{  filter:" grayscale(100%)"}} />
+                  <Image alt={item.alt} title={item.alt} src={item.img} width={130} height={130}  />
                 </div>
                 
              })}
@@ -61,3 +62,21 @@ const Clients = () => {
 }
 
 export default Clients;
+
+export async function getStaticProps(){
+
+
+  const response=await fetch('http://192.168.0.8:8000/api/clients');
+  const data=await response.json();
+  console.log(data);
+
+  return{
+    props:{
+      data
+
+    }
+  }
+
+  
+
+}

@@ -88,17 +88,10 @@ export const aboutSolutions=[
         id:10,
         img:stone,
         alt:"crushed stone",
-        title:"11- Crushed stone",
+        title:"10- Crushed stone",
         description:"We have Crushed Stones or (Angular Rocks) for all your construction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
 
     },
-    {
-        id:11,
-        img:roof,
-        alt:"steel roof",
-        title:"11- Steel Roof",
-        description: " You are always welcome to visit our little den. Professional in teir craft! All products were super amazing with strong attension to details, comps and overall vibe.",
 
-    }
 
 ]

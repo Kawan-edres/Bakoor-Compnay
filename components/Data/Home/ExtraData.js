@@ -21,5 +21,17 @@ export const extraData=[
         description:"The latest design trends meet hand-crafted templates. "
 
     },
+    {
+        id:5,
+        title:"5-Gas Station",
+        description:"The latest design trends meet hand-crafted templates. "
+
+    },
+    {
+        id:6,
+        title:"6- Hotel and Resaurant",
+        description:"The latest design trends meet hand-crafted templates. "
+
+    },
 
 ]

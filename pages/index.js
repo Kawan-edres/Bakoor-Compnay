@@ -7,41 +7,32 @@ import Layout from "../components/layout/Layout";
 import Clients from "../components/Home/Clients";
 import Intro from "../components/Home/Intro";
 import About from "../components/Home/About";
-import Projects from "../components/Home/Projects";
 import Experiences from "../components/Home/Experiences";
 import Extra from "../components/Home/Extra";
-import Featured from '../components/slider/Projects'
+import Featured from "../components/slider/Projects";
 
 // Head
-import Head from '../components/Head/Head'
-
-
+import Head from "../components/Head/Head";
 
 function Home() {
-  const [isOpen, setOpen] = useState(false);
 
   return (
     <>
       <Layout>
-      {/* <Head canonicalLink="https://devspace.krd" /> */}
+        {/* <Head canonicalLink="https://devspace.krd" /> */}
         <Intro />
-
 
         <section className="section-box">
           <About />
           {/* <Projects /> */}
         </section>
-          <Featured />
+        <Featured />
         <Clients />
-
 
         <Experiences />
         <div className="bg-7 mt-100 pb-50">
-
-        <Extra />
+          <Extra />
         </div>
-
-      
       </Layout>
     </>
   );

@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
                 <div className="swiper-slide active" >
                   <div
                     
-                    className="col-lg-8 col-md-8 col-sm-8 col-8 text-center  box-hover-shadow hover-up"
+                    className="col-lg-8 col-md-8 col-sm-8 col-8 text-center"
                   >
                     <Image
                       alt={item.alt}
@@ -41,7 +41,7 @@ const TestimonialSlider = () => {
                       src={item.img}
                       width={150}
                       height={150}
-                      style={{ filter: " grayscale(100%)" }}
+                    
                     />
                   </div>
                 </div>

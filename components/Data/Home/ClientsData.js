@@ -1,8 +1,8 @@
 
-import client1 from '../../../public/assets/imgs/Logo/client1.jpg'
-import client2 from '../../../public/assets/imgs/Logo/client2.jpg'
-import client3 from '../../../public/assets/imgs/Logo/client3.jpg'
-import client4 from '../../../public/assets/imgs/Logo/client4.jpg'
+import client1 from '../../../public/assets/imgs/Logo/kurdistan.jpg'
+import client2 from '../../../public/assets/imgs/Logo/biwater.jpg'
+import client3 from '../../../public/assets/imgs/Logo/kshtukal.jpg'
+import client4 from '../../../public/assets/imgs/Logo/erbil-water.jpg'
 import acted from '../../../public/assets/imgs/Logo/acted.png'
 import parwarda from '../../../public/assets/imgs/Logo/parwarda.png'
 import army from '../../../public/assets/imgs/Logo/army.png'

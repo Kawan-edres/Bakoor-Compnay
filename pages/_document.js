@@ -11,6 +11,8 @@ class MyDocument extends Document {
         </Head>
         <body>
         <div id="NotificationOverLay"></div>
+        <div id="kawan"></div>
+
 
           <Main />
           <NextScript />

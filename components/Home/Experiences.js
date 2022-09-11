@@ -22,7 +22,7 @@ const Experiences = () => {
           <div className="col-lg-2 col-sm-1 col-12" />
           <div className="col-lg-8 col-sm-10 col-12 text-center mt-100">
             <h2 className="text-heading-1 color-gray-900">
-            Bakoor Company Experiences
+            BAKOOR Company Experiences
              
             </h2>
            

@@ -5,6 +5,8 @@ import { useAnimation } from "framer-motion";
 import {motion} from 'framer-motion'
 import Map from '../components/Map/Map'
 import Form from "../components/Contact/Form";
+import Head from '../components/Head/Head'
+
 
 
 
@@ -38,6 +40,9 @@ function Contact() {
     return (
         <>
             <Layout>
+                    {/* <Head canonicalLink="https://devspace.krd" /> */} 
+                    <Head title="Contact" />
+
                 <section   className="section-box">
                     <div className="banner-hero banner-breadcrums">
                         <div className="container text-center">
@@ -66,8 +71,7 @@ function Contact() {
                         </div>
                     </motion.div>
                 </section>
-
-
+                
                 <Map />
     
             </Layout>

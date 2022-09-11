@@ -1,20 +1,17 @@
 import hotel from "../../../public/assets/imgs/Home/hotel.jpg";
 import construction from "../../../public/assets/imgs/Home/construction.jpg";
-import steel from "../../../public/assets/imgs/Home/steel.jpg";
 import road from "../../../public/assets/imgs/About/gelary2.jpg";
 import waterSupply from "../../../public/assets/imgs/Home/waterSupply.jpg";
 import mineralWater from "../../../public/assets/imgs/Home/mineralWater.jpg";
 import market from "../../../public/assets/imgs/Home/market.jpg";
-import gas from "../../../public/assets/imgs/Home/gas.jpg";
+import gas from "../../../public/assets/imgs/Home/gas.jpeg";
 import crushedStone from  '../../../public/assets/imgs/About/crushedStone.jpg'
 import waterMeter from  '../../../public/assets/imgs/Home/waterMeter.jpg'
 import qarachukh from  '../../../public/assets/imgs/Home/qarachukh.jpg'
 import sewage from  '../../../public/assets/imgs/Home/sewage.jpg'
 import bekhal from  '../../../public/assets/imgs/Home/bekhal.jpg'
 import dawajin from  '../../../public/assets/imgs/Home/dawajin.jpg'
-
-
-
+ 
 
 
 
@@ -24,20 +21,12 @@ export const projectsData=[
     {
         id:1,
         title:"Costruction",
-        
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         img:construction,
         alt:"construction",
         bg:"bg-1"
     },
-    {
-        id:2,
-        title:"Stell Construction",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        img:steel,
-        alt:"steel",
-        bg:"bg-2"
-    },
+    
     {
         id:3,
         title:"Highway Develompent",
@@ -57,7 +46,7 @@ export const projectsData=[
     },
     {
         id:5,
-        title:"Ductile Iron Pipes",
+        title:"Ductile Pipes",
         description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         img:waterSupply,
         alt:"water supply",
