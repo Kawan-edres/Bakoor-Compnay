@@ -1,13 +1,14 @@
-// const TestPage = ({data}) => {
-//     console.log(data);
-//     return (
-//         <div>
+const TestPage = () => {
+    // console.log(data);
+    return (
+        <div>
+        <h1>Test</h1>
            
-//         </div>
-//     );
-// }
+        </div>
+    );
+}
 
-// export default TestPage;
+export default TestPage;
 
 // export async function getStaticProps() {
  
