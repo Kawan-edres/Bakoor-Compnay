@@ -65,20 +65,18 @@ const ProjectDetail = ({data}) => {
 
 export default ProjectDetail;
 
-
 export async function getStaticPaths() {
 
  
- 
-  return {
-    paths: [
-      { params: { postId: 'sewer-water-canal' }},
-      {params: { postId: 'soran-soccer-stadium' },},
-      {params: { postId: 'highway-and-ductile-piping-in-ankawa-section-108' },},
+  const response=await fetch(`https://bakoor.devspace.krd/admin/public/api/projects`)
+  const data=await response.json()
 
-    ],
-    fallback: true,
-  }
+  const paths = data.data.map((project) => ({
+    params: { postId:project.slug},
+  }))
+
+ 
+  return { paths, fallback: false }
 
 }
   

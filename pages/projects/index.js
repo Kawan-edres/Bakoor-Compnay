@@ -26,11 +26,11 @@ export default projects;
 
 
 
-export async function getStaticProps    (context){
+export async function getStaticProps(context){
     try{
         const response =await fetch ("https://bakoor.devspace.krd/admin/public/api/sub-categories");
         const projects=await response.json();
-        const response2 =await fetch (`"https://bakoor.devspace.krd/admin/public/api/projects"`);
+        const response2 =await fetch ("https://bakoor.devspace.krd/admin/public/api/projects");
         const data2=await response2.json();
     
         
