@@ -11,6 +11,12 @@
 
 }
 
+.leaflet-container{
+    width: 80%;
+    height: 500px;
+    border-radius: 58px;
+  }
+
 
 
 

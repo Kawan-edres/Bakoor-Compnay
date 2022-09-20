@@ -1,9 +1,11 @@
+import dynamic from "next/dynamic"
+const Mapp = dynamic(() => import("../../components/Map/Mapp"), { ssr:false })
 import classes from "./projects-deatil.module.css";
 import Image from "next/image";
 import Layout from "../../components/layout/Layout";
 import Head from '../../components/Head/Head'
-import Map from '../../components/Map/ProjectDetailsMap'
 import { useRouter } from "next/router";
+import mapStyle from '../../components/Map/./map.module.css'
 
 
 const ProjectDetail = ({data}) => {
@@ -15,6 +17,9 @@ const ProjectDetail = ({data}) => {
 }
 
 
+function createMarkup(data) {
+  return { __html: data };
+}
   return (
     <Layout>
     
@@ -38,9 +43,8 @@ const ProjectDetail = ({data}) => {
           </div>
           <div className={classes.col2}>
             <h3 className="text-display2">{data.data.title}</h3>
-            <p>
-              {data.data.body.slice(3,-4)}
-            </p>
+            <p>{data.data.body}</p>
+
           </div>
         </div>
       
@@ -57,8 +61,11 @@ const ProjectDetail = ({data}) => {
       </div>
 
       </div>
+  
+      <div className={mapStyle.mapContainer}>
 
-      <Map data={data.data} />
+      <Mapp data={data.data} />
+      </div>
     </Layout>
   );
 };
@@ -93,7 +100,6 @@ export async function getStaticProps(context) { //context is an object that cont
           notFound:true
       }
   }
-  console.log(data);
   return{
       props:{
           data
