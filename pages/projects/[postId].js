@@ -6,34 +6,34 @@ import Map from '../../components/Map/ProjectDetailsMap'
 
 const ProjectDetail = ({data}) => {
 
-console.log(data?.data);
-const details=data?.data;
+    console.log(data.data .cover[0]);
+    
 
   return (
     <Layout>
     
-    <Head description={details.short_description} />
+    <Head description={data.data.short_description} />
       <div className={classes.container}>
         <div className={classes.Intro}>
-          <Image className={classes.img} src={details.cover[0]} alt="helo" layout="fill" />
+          <Image className={classes.img} src={data.data .cover[0]} alt="helo" layout="fill" />
         </div>
 
         <div className={classes.row}>
           <div className={classes.col1}>
             <h4 className="text-display2">Project Informtion</h4>
             <ul>
-              <li>Client:{details.client}</li>
-              <li>Location:{details.location}</li>
-              <li>Area:{details.area}</li>
-              <li>Start Date:{details.start_date}</li>
-              <li>Finish Date:{details.end_date}</li>
-              <li>Budget:{details.budget}</li>
+              <li>Client:{data.data.client}</li>
+              <li>Location:{data.data.location}</li>
+              <li>Area:{data.data.area}</li>
+              <li>Start Date:{data.data.start_date}</li>
+              <li>Finish Date:{data.data.end_date}</li>
+              <li>Budget:{data.data.budget}</li>
             </ul>
           </div>
           <div className={classes.col2}>
-            <h3 className="text-display2">{details.title}</h3>
+            <h3 className="text-display2">{data.data.title}</h3>
             <p>
-              {details.body.slice(3,-4)}
+              {data.data.body.slice(3,-4)}
             </p>
           </div>
         </div>
@@ -43,7 +43,7 @@ const details=data?.data;
       <div className={classes.grid}>
 
      {
-       details.image.map((item)=>{
+       data.data.image.map((item)=>{
         return <Image width={400} height={400} key={item.id} src={item} alt={item.alt} title={item.alt} />
       })
      }
@@ -52,7 +52,7 @@ const details=data?.data;
 
       </div>
 
-      <Map data={details} />
+      <Map data={data.data} />
     </Layout>
   );
 };
@@ -62,22 +62,18 @@ export default ProjectDetail;
 
 export async function getStaticPaths() {
 
-    return {
-      paths: [
-        {
-            params: {postId: 'soran-soccer-stadium'}
-        },
-        {
-            params: {postId: 'sewer-water-canal'}
-        },
-        {
-            params: {postId: 'highway-and-ductile-piping-in-ankawa-section-108'}
-        },
-   
-      ],
-    // paths,
-    fallback: true
-    }
+   // Call an external API endpoint to get posts
+   const res = await fetch('https://bakoor.devspace.krd/admin/public/api/projects ')
+   const projects = await res.json()
+ 
+   // Get the paths we want to pre-render based on posts
+   const paths = projects.data.map((project) => ({
+     params: { postId: project.slug },
+   }))
+ 
+
+   return { paths, fallback: true }
+
   }
 
 
@@ -90,16 +86,16 @@ export async function getStaticProps(context) { //context is an object that cont
     
  
    
-    if(!data.data.id){
+    if(!data){
         return{
             notFound:true
         }
     }
+    console.log(data);
     return{
         props:{
             data
-        },
-        revalidate:10
+        }
     }
 
 }

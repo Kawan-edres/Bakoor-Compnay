@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { projectsBtn } from "../Data/Home/projectsButton";
 
 const Buttons = ({ orginalData, setFilterData, type, setType }) => {
   const handleOnClick = (index) => {
@@ -19,7 +18,7 @@ const Buttons = ({ orginalData, setFilterData, type, setType }) => {
       setFilterData(filtered);
 
     }
-  }, [type]);
+  }, [type,orginalData,setFilterData]);
 
   return (
     <div className="container">

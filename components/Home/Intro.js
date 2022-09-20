@@ -40,7 +40,7 @@ const Intro = () => {
     }
 
 
-  },[inView])
+  },[inView,left,right])
    
 
     return (
