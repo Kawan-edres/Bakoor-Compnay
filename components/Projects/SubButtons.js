@@ -16,7 +16,7 @@ const SubButtons = ({ filterData,type2,setType2,orginalData2,setFilterData2}) =>
         return()=>{
           
         }
-    }, [type2]);
+    }, [type2,orginalData2,setFilterData2]);
 
   return (
     <motion.div  className="container">

@@ -3,11 +3,17 @@ import Image from "next/image";
 import Layout from "../../components/layout/Layout";
 import Head from '../../components/Head/Head'
 import Map from '../../components/Map/ProjectDetailsMap'
+import { useRouter } from "next/router";
+
 
 const ProjectDetail = ({data}) => {
 
-    console.log(data.data .cover[0]);
-    
+  const router=useRouter();
+
+  if(router.isFallback){
+    return <h1>Loading...</h1>
+}
+
 
   return (
     <Layout>
@@ -15,7 +21,7 @@ const ProjectDetail = ({data}) => {
     <Head description={data.data.short_description} />
       <div className={classes.container}>
         <div className={classes.Intro}>
-          <Image className={classes.img} src={data.data .cover[0]} alt="helo" layout="fill" />
+          <Image className={classes.img} src={data.data.cover[0]} alt="helo" layout="fill" />
         </div>
 
         <div className={classes.row}>
@@ -43,8 +49,8 @@ const ProjectDetail = ({data}) => {
       <div className={classes.grid}>
 
      {
-       data.data.image.map((item)=>{
-        return <Image width={400} height={400} key={item.id} src={item} alt={item.alt} title={item.alt} />
+       data.data.image.map((item,i)=>{
+        return <Image key={i} width={400} height={400}  src={item} alt={item.alt} title={item.alt} />
       })
      }
         
@@ -62,40 +68,38 @@ export default ProjectDetail;
 
 export async function getStaticPaths() {
 
-   // Call an external API endpoint to get posts
-   const res = await fetch('https://bakoor.devspace.krd/admin/public/api/projects ')
-   const projects = await res.json()
  
-   // Get the paths we want to pre-render based on posts
-   const paths = projects.data.map((project) => ({
-     params: { postId: project.slug },
-   }))
  
+  return {
+    paths: [
+      { params: { postId: 'sewer-water-canal' }},
+      {params: { postId: 'soran-soccer-stadium' },},
+      {params: { postId: 'highway-and-ductile-piping-in-ankawa-section-108' },},
 
-   return { paths, fallback: true }
-
+    ],
+    fallback: true,
   }
 
-
+}
   
 
+
 export async function getStaticProps(context) { //context is an object that contains a key called params that contains the id of the post
-    const {params} = context
-    const response =await fetch (`https://bakoor.devspace.krd/admin/public/api/projects/${params.postId}`);
-    const data=await response.json();
-    
- 
-   
-    if(!data){
-        return{
-            notFound:true
-        }
-    }
-    console.log(data);
-    return{
-        props:{
-            data
-        }
-    }
+  const {params} = context
+  const response=await fetch(`https://bakoor.devspace.krd/admin/public/api/projects/${params.postId}`)
+  const data=await response.json()
+
+  if(!data.data.id){
+      console.log("fucked up");
+      return{
+          notFound:true
+      }
+  }
+  console.log(data);
+  return{
+      props:{
+          data
+      }
+  }
 
 }
