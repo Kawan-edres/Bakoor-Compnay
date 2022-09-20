@@ -99,7 +99,8 @@ export async function getStaticProps(context) { //context is an object that cont
   return{
       props:{
           data
-      }
+      },
+      revalidate: 5,
   }
 
 }
