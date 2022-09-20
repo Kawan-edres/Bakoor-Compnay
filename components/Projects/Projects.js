@@ -1,26 +1,54 @@
-import Link from "next/link";
-import Image from "next/image";
-import { projectsPageData } from "../Data/Projects/ProjectsData";
 import Buttons from "./Buttons";
 import Category from "./Category";
+import SubButtons from "./SubButtons";
 import { useEffect, useState } from "react";
 
-const Projects = () => {
-  const [orginalData,setOrginalData]=useState([]);
-  const [filterData,setFilterData]=useState([]);
-  const [type,setType]=useState("construction");
+const Projects = ({ projects, data2 }) => {
+  //Category States
+  const [orginalData, setOrginalData] = useState([]);
+  const [filterData, setFilterData] = useState([]);
+  const [type, setType] = useState(1);
 
-  useEffect(()=>{
-    setOrginalData(projectsPageData);
-    setFilterData(projectsPageData)
-  },[])
-  
+  // SubCategory States
+  const [orginalData2, setOrginalData2] = useState([]);
+  const [filterData2, setFilterData2] = useState([]);
+  const [type2, setType2] = useState("concrete");
+
+
+
+  const filter = projects.data.filter((item) => {
+    return item.category_id == 1;
+  });
+  useEffect(() => {
+    setOrginalData(projects.data);
+    setFilterData(filter);
+    setOrginalData2(data2.data);
+    setFilterData2(data2.data.filter(item=>item.sub_category==="concrete"));
+
+    return()=>{
+          
+    }
+    
+  }, []);
+
   return (
     <section className="section-box pb-50 ">
-     
-       <Buttons orginalData={orginalData} setFilterData={setFilterData} type={type} setType={setType} />
-       <Category filterData={filterData}  />
-  
+      <Buttons
+        orginalData={orginalData}
+        setFilterData={setFilterData}
+        type={type}
+        setType={setType}
+      />
+      <SubButtons
+        filterData={filterData}
+        type2={type2}
+        setType2={setType2}
+        orginalData2={orginalData2}
+        setFilterData2={setFilterData2}
+
+      />
+
+      <Category filterData2={filterData2}  />
     </section>
   );
 };
@@ -28,42 +56,5 @@ const Projects = () => {
 export default Projects;
 
 
-// <div className="container list-category-homepage7 mt-70">
-// <div className="row">
-//   {projectsPageData.map((item) => {
-//     return (
-//       <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-//         <div className="grid-category-2">
-//           <div className="grid-category-image">
-//             <Link href="#">
-//               <a>
-//                 <Image  height={500} width={700} src={item.img} placeholder="blur" />
-//               </a>
-//             </Link>
-//           </div>
-//           <Link href="#">
-//             <a className="text-heading-5 color-gray-900">
-//               {item.title}
-//             </a>
-//           </Link>
 
-//           <div className="category-info-bottom">
-//             <div className="link-category">
-//               <Link href="#">
-//                 <a className="mr-20">{item.type}</a>
-//               </Link>
-//               <span className="text-date">{item.date}</span>
-//             </div>
 
-//             <div className="link-readmore">
-//               <Link href="#">
-//                 <a>READ MORE</a>
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     );
-//   })}
-// </div>
-// </div>

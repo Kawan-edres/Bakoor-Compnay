@@ -10,7 +10,8 @@ import Head from '../components/Head/Head'
 
 
 
-function Contact() {
+function Contact({data}) {
+
 
     const { ref, inView, } = useInView({
         /* Optional options */
@@ -60,10 +61,10 @@ function Contact() {
                                 </div>
                                 <div className="col-lg-4 mb-40">
                                     <h4 className="text-heading-6 color-gray-900 icon-home mb-10 mt-10">Bakoor Company</h4>
-                                    <p className="text-body-text color-gray-600"><a href="#map">Iraq , Erbil-Ankawa<br /> Close to Ankawa Palace</a></p>
-                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 445 0404">+964 750 445 0404</a></p>
-                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 378 8980">+964 750 378 8980</a></p>
-                                    <p className="text-body-text color-gray-600 "> <a href="info@bakoorcompany.com">info@bakoorcompany.com</a></p>
+                                    <p className="text-body-text color-gray-600"><a href="#map">{data.data[2].value}</a></p>
+                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 445 0404">{data.data[3].value}</a></p>
+                                    <p className="text-body-text color-gray-600 "><a href="tel:+964 750 378 8980">{data.data[4].value}</a></p>
+                                    <p className="text-body-text color-gray-600 "> <a href="info@bakoorcompany.com">{data.data[5].value}</a></p>
                                 </div>
                                
                                <Form />
@@ -81,3 +82,27 @@ function Contact() {
 }
 
 export default Contact;
+
+export async function getStaticProps(){
+
+    try{
+      const response =await fetch ("https://bakoor.devspace.krd/admin/public/api/settings");
+      const data=await response.json();
+     
+      return {
+        props: {
+          data
+        }, // will be passed to the page component as props
+        revalidate: 5, // In seconds
+    
+        
+      }   
+    }catch(e){
+      console.log(e.message);
+      return ({props: {}})
+  
+  
+    }
+  
+  
+  }

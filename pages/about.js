@@ -16,7 +16,7 @@ import Head from '../components/Head/Head'
 import construction from "../public/assets/imgs/About/gelary1.jpg";
 import road from "../public/assets/imgs/About/gelary2.jpg";
 
-function About1() {
+function About1({data,data2}) {
   return (
     <>
       <Layout>
@@ -24,14 +24,14 @@ function About1() {
         <Head title="About" />
 
         <Intro />
-        <CounterUpBakoor />
+        <CounterUpBakoor data={data}  />
         <About />
 
         <AboutGelery img1={construction} img2={road} />
 
         <AboutOthers />
 
-        <AboutClients />
+        <AboutClients data2={data2.data}  />
         <AboutSolutions />
       </Layout>
     </>
@@ -39,3 +39,33 @@ function About1() {
 }
 
 export default About1;
+
+
+export async function getStaticProps() {
+ 
+  try{
+    const response =await fetch ("https://bakoor.devspace.krd/admin/public/api/settings");
+    const data=await response.json();
+    const response2 =await fetch ("https://bakoor.devspace.krd/admin/public/api/clients");
+    const data2=await response2.json();
+   
+    return {
+      props: {
+        data,
+        data2
+      }, // will be passed to the page component as props
+          revalidate: 5, // In seconds
+  
+      
+    }   
+  }catch(e){
+    console.log(e.message);
+    return ({props: {}})
+
+
+  }
+
+
+  
+}
+

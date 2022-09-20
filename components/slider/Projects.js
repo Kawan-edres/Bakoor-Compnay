@@ -9,7 +9,7 @@ import {useRouter} from 'next/router'
 
 
 SwiperCore.use([Autoplay, Navigation]);
-const TestimonialSlider = () => {
+const TestimonialSlider = ({data2}) => {
   const router=useRouter()
   return (
     <>
@@ -40,7 +40,7 @@ const TestimonialSlider = () => {
             }}
             className="swiper-wrapper pb-100 pt-100    "
           >
-            {projectsData.map((item) => (
+            {data2.data.map((item) => (
               <SwiperSlide key={item.id}>
                 <div
                   // className="swiper-slide active"
@@ -50,9 +50,9 @@ const TestimonialSlider = () => {
                 >
                   <div className="col-lg-12 col-md-12 col-sm-12 col-12  mt-20  box-hover-shadow hover-up bg-7 mlozm cardd bdr-16">
                     <Image
-                      alt={item.alt}
-                      title={item.alt}
-                      src={item.img}
+                      alt={item.title}
+                      title={item.title}
+                      src={item.cover}
                       layout="fill"
                       className="bdr-16"
                     />
@@ -76,3 +76,5 @@ const TestimonialSlider = () => {
 };
 
 export default TestimonialSlider;
+
+

@@ -4,10 +4,9 @@ import Image from "next/image";
 import React from "react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { clientsData } from "../Data/Home/ClientsData";
 
 SwiperCore.use([Autoplay, Navigation]);
-const TestimonialSlider = () => {
+const TestimonialSlider = ({data2}) => {
   return (
     <>
       <div className="box-swiper">
@@ -28,7 +27,7 @@ const TestimonialSlider = () => {
             }}
             className="swiper-wrapper pb-70 pt-5"
           >
-            {clientsData.map((item) => (
+            {data2.map((item) => (
               <SwiperSlide key={item.id}>
                 <div className="swiper-slide active" >
                   <div
@@ -36,11 +35,11 @@ const TestimonialSlider = () => {
                     className="col-lg-8 col-md-8 col-sm-8 col-8 text-center"
                   >
                     <Image
-                      alt={item.alt}
-                      title={item.alt}
-                      src={item.img}
-                      width={150}
-                      height={150}
+                      alt={item.name}
+                      title={item.name}
+                      src={item.image}
+                      width={200}
+                      height={100}
                     
                     />
                   </div>

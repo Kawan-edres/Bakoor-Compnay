@@ -3322,7 +3322,21 @@ textarea.form-control-lg {
     clip: rect(0, 0, 0, 0);
     pointer-events: none
 }
+.btn-sub{
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    padding: 10px ;
+    border-radius: 10px;
 
+
+}
+.btn-sub-active{
+
+}
+.btn-sub-active{
+
+}
 .btn-check:disabled+.btn,
 .btn-check[disabled]+.btn {
     pointer-events: none;
@@ -22621,10 +22635,67 @@ h6 {
     border: 2px solid transparent
 }
 
+.btn.btn-bd-red-hover {
+    color: #fff;
+    border: 2px solid transparent
+}
+
 .btn.btn-bd-green-hover:hover {
     color: #006D77 !important;
     background-color: #fff !important;
     border: 2px solid #006D77
+}
+.btn.btn-bd-red-hover:hover {
+    color: #006D77 !important;
+    background-color: red !important;
+    border: 2px solid red
+}
+
+
+
+
+/* CSS */
+.sub-btn {
+  background-color: #222;
+  border-radius: 50px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: .5rem .5rem;
+  border: 2px solid black;
+
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+    scale:1.1;
+}
+.sub-btn-active{
+
+    background-color:   #008c99;
+ 
+ 
+
 }
 
 .btn.active {

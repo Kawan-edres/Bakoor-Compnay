@@ -1,7 +1,10 @@
 import CounterUp from "../elements/CounterUp";
 import React from "react";
+import { useState } from "react";
 
-const CounterUpBakoor = () => {
+const CounterUpBakoor = ({data}) => {
+
+
   
 
   const year =new Date().getFullYear() -2003;
@@ -23,7 +26,7 @@ const CounterUpBakoor = () => {
                   </div>
                   <div className="col-lg-4 col-md-3 col-sm-6 col-6 mb-30">
                     <span className="text-display-3 color-green-900">
-                      +<CounterUp count={200} time={2} />
+                      +<CounterUp count={data.data[0]?.value} time={2} />
                     </span>
                     <p className="text-body-text color-gray-500 pl-40">
                       Projects Done
@@ -32,7 +35,7 @@ const CounterUpBakoor = () => {
 
                   <div className="col-lg-4 col-md-3 col-sm-6 col-6 mb-30">
                     <span className="text-display-3 color-green-900">
-                      +<CounterUp count={7} time={1} />
+                      +<CounterUp count={data.data[1].value} time={1} />
                     </span>
                     <p className="text-body-text color-gray-500 pl-40">
                       Constant Clients
@@ -50,3 +53,6 @@ const CounterUpBakoor = () => {
 }
 
 export default React.memo(CounterUpBakoor);
+
+
+

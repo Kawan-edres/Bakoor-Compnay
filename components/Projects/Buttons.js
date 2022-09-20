@@ -7,12 +7,18 @@ const Buttons = ({ orginalData, setFilterData, type, setType }) => {
     setType(index); // remove the curly braces
   };
   useEffect(() => {
-    if (type === "construction") {
-      setFilterData(orginalData);
-      return; //tawaw letawa hamuim awe  macho xwartr
+    let filtered=orginalData.filter((data)=>data.category_id==1);
+    if (type == 1) {
+       filtered=orginalData.filter((data)=>data.category_id==type)
+      setFilterData(filtered);
+     return
+      
     }
-    const filtered = orginalData.filter((data) => data.category.includes(type));
-    setFilterData(filtered);
+    else if(type==2){
+       filtered = orginalData.filter((data) => data.category_id==type);
+      setFilterData(filtered);
+
+    }
   }, [type]);
 
   return (
@@ -20,49 +26,28 @@ const Buttons = ({ orginalData, setFilterData, type, setType }) => {
       <div className=" mt-100">
         <ul className="nav" role="tablist">
           <button
-            id="construction"
+            id="contruction"
             className={
-              type === "construction"
+              type == 1
                 ? "btn btn-default btn-bd-green-hover btn-select active"
                 : "btn btn-default btn-bd-green-hover btn-select"
             }
-            onClick={() => handleOnClick("construction")}
+            onClick={() => handleOnClick(1)}
           >
-            Construction
+            Contruction
           </button>
           <button
-          id="general-trading"
+          id="general trading"
             className={
-              type === "general-trading"
+              type == 2
                 ? "btn btn-default btn-bd-green-hover btn-select active"
                 : "btn btn-default btn-bd-green-hover btn-select"
             }
-            onClick={() => handleOnClick("construction")}
+            onClick={() => handleOnClick(2)}
           >
             General Trading
           </button>
-          <button
-          id="water"
-            className={
-              type === "water"
-                ? "btn btn-default btn-bd-green-hover btn-select active"
-                : "btn btn-default btn-bd-green-hover btn-select"
-            }
-            onClick={() => handleOnClick("water")}
-          >
-            Water
-          </button>
-          <button
-          id="market"
-            className={
-              type === "market"
-                ? "btn btn-default btn-bd-green-hover btn-select active"
-                : "btn btn-default btn-bd-green-hover btn-select"
-            }
-            onClick={() => handleOnClick("market")}
-          >
-            Market
-          </button>
+         
         </ul>
       </div>
     </div>
@@ -71,20 +56,4 @@ const Buttons = ({ orginalData, setFilterData, type, setType }) => {
 
 export default Buttons;
 
-// {projectsBtn.map((item) => {
-//     return (
-//       <li key={item.id} onClick={() => handleOnClick(item.id)}>
-//         <Link href={item.link}>
-//           <a
-//             className={
-//               activeIndex === item.id
-//                 ? "btn btn-default btn-bd-green-hover btn-select active"
-//                 : "btn btn-default btn-bd-green-hover btn-select"
-//             }
-//           >
-//             {item.text}
-//           </a>
-//         </Link>
-//       </li>
-//     );
-//   })}
+

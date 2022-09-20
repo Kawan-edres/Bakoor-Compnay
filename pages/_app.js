@@ -27,11 +27,12 @@ function MyApp({ Component, pageProps }) {
                 initial={false}
                 onExitComplete={() => window.scrollTo(0, 0)}
             >
-      {!loading ? (
+      {/* {!loading ? ( */}
         <Component {...pageProps} />
-      ) : (
-        <Preloader />
-      )}
+      {/* ) : ( */}
+        {/* <Preloader /> */}
+        
+      {/* )} */}
 
       </AnimatePresence>
 

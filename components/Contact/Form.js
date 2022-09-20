@@ -46,9 +46,8 @@ const Form = () => {
       phone,
       message,
     };
-    console.log(newMessage);
     try {
-      const response = await fetch("/api/form", {
+      const response = await fetch(process.env.NEXT_PUBLIC_ANALYTICS_ID, {
         method: "POST",
         body: JSON.stringify(newMessage),
         headers: {
@@ -94,7 +93,7 @@ const Form = () => {
 
   return (
     <div className="col-lg-8">
-      <form onSubmit={handleSubmit} action="/api/form" method="post">
+      <form onSubmit={handleSubmit} action={process.env.NEXT_PUBLIC_ANALYTICS_ID} method="post">
         <div className="row">
           <div className="col-lg-6">
             <div className="form-group">

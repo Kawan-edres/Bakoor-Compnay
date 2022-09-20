@@ -27,12 +27,12 @@ export const projectsPageData=[
         type:"Water Canal",
         date:"Octobor 25,2006"
 
+
     },
     {
         id:2,
         img:img2,
-        category:"construction",
-
+        category:"construction",    
         title:"Highway and Ductile Piping in Ankawa Section 108",
         type:"Road & Ductile Piping ",
         date:"July 7,2009"

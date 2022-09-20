@@ -8,7 +8,7 @@ export default async function  handler(req, res) {
   if((req.method="POST")){
     const { email,company,phone, name, message } = req.body;
 
-      const newMessage={
+      const contactForm={
         id: uuid(),
         name,
         email,
@@ -17,7 +17,16 @@ export default async function  handler(req, res) {
         phone
   
       }
-      res.status(201).json(newMessage);
+      res.status(201).json(contactForm);
+      try {
+        const response = await fetch("https://bakoor.devspace.krd/admin/public/api/contact/send", contactForm)
+        console.log(contactForm);
+
+      } catch (e) {
+        console.log(e.message);
+        console.log("fucked up");
+       
+      }
 
     }
 

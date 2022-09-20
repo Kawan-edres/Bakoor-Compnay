@@ -1,16 +1,17 @@
-import { projectsPageData } from "../Data/Projects/ProjectsData";
 import Image from "next/image";
 import classes from "./category.module.css";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-const Category = ({ filterData }) => {
+
+const Category = ({ filterData2 }) => {
   return (
     <motion.div layout className={classes.category}>
-      {filterData.map((item) => {
-        return (
+      {filterData2.map((item) => {
+        return ( 
           <AnimatePresence key={item.id}>
-            <Link href={"/"}>
+            <Link href={`projects/${item.slug}`} passHref>
               <motion.div 
                 layout
                 animate={{ opacity: 1, scale: 1 }}
@@ -22,9 +23,9 @@ const Category = ({ filterData }) => {
               >
                 {/* <p>{item.title}</p>     */}
                 <Image
-                  src={item.img}
+                  src={item.cover}
                   layout="fill"
-                  alt={item.alt}
+                  alt={item.title}
                   title={item.title}
                   className="bdr-16"
                 />

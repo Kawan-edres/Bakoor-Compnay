@@ -41,7 +41,7 @@ const RightSidebar = ({ openClass, handleOpen, rotate1, rotate2 }) => {
               <div className="mobile-menu-wrap mobile-header-border">
                 <nav>
                   <ul className="mobile-menu font-heading">
-                    <Link href="/">
+                    <Link href="/" passHref>
                       <li>
                         <a
                           className={
@@ -53,7 +53,7 @@ const RightSidebar = ({ openClass, handleOpen, rotate1, rotate2 }) => {
                       </li>
                     </Link>
 
-                    <Link href="/about">
+                    <Link href="/about" passHref>
                       <li>
                         <a
                           className={
@@ -65,7 +65,7 @@ const RightSidebar = ({ openClass, handleOpen, rotate1, rotate2 }) => {
                       </li>
                     </Link>
 
-                      <Link href="/projects">
+                      <Link href="/projects" passHref>
                     <li>
                         <a
                           className={
@@ -77,7 +77,7 @@ const RightSidebar = ({ openClass, handleOpen, rotate1, rotate2 }) => {
                     </li>
                       </Link>
 
-                      <Link href="/contact">
+                      <Link href="/contact" passHref>
                     <li>
                         <a
                           className={
