@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/layout/Layout";
-
+import NotFound from '../public/assets/imgs/template/404.png'
 
 function Error() {
     return (
@@ -10,7 +11,7 @@ function Error() {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12 text-center mt-40">
-                                <img className="img-responsive" src="assets/imgs/template/404.png" alt="not-found-image" />
+                                <Image className="img-responsive" src={NotFound} alt="not-found-image" />
                                 <h2 className="text-heading-1 color-gray-900 mb-20 mt-50">
                                     Whoops! That page doesn’t exist.
                                 </h2>
