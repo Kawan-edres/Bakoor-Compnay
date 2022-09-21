@@ -6,9 +6,12 @@ import Layout from "../../components/layout/Layout";
 import Head from '../../components/Head/Head'
 import { useRouter } from "next/router";
 import mapStyle from '../../components/Map/./map.module.css'
+import { useRef } from "react";
 
 
 const ProjectDetail = ({data}) => {
+
+  const htmlString = "<h1>Hello World</h1>"
 
   const router=useRouter();
 
@@ -17,9 +20,8 @@ const ProjectDetail = ({data}) => {
 }
 
 
-function createMarkup(data) {
-  return { __html: data };
-}
+
+
   return (
     <Layout>
     
@@ -35,15 +37,15 @@ function createMarkup(data) {
             <ul>
               <li>Client:{data.data.client}</li>
               <li>Location:{data.data.location}</li>
-              <li>Area:{data.data.area}</li>
-              <li>Start Date:{data.data.start_date}</li>
-              <li>Finish Date:{data.data.end_date}</li>
-              <li>Budget:{data.data.budget}</li>
+             {data.data.area ? <li>Area:{data.data.area}</li> :""} 
+              {data.data.start_date?<li>Start Date:{data.data.start_date}</li>:""}
+              {data.data.end_date?<li>Finish Date:{data.data.end_date}</li>:""}
+              {data.data.budget ?<li>Budget:{data.data.budget}</li> :" "} 
             </ul>
           </div>
           <div className={classes.col2}>
             <h3 className="text-display2">{data.data.title}</h3>
-            <p>{data.data.body}</p>
+            <p dangerouslySetInnerHTML={{ __html: data.data.body }}></p>
 
           </div>
         </div>
@@ -95,7 +97,7 @@ export async function getStaticProps(context) { //context is an object that cont
   const data=await response.json()
 
   if(!data.data.id){
-      console.log("fucked up");
+      console.log("Somthing went wrong");
       return{
           notFound:true
       }

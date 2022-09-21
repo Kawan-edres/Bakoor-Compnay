@@ -16,7 +16,14 @@
     height: 500px;
     border-radius: 58px;
   }
-
+  .leaflet-container .leaflet-control-attribution {
+	
+	display: none !important;
+	}
+    .leaflet-control-attribution a {
+        display: none !important;
+      }
+      
 
 
 
