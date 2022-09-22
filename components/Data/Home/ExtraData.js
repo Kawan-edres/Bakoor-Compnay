@@ -1,7 +1,7 @@
 export const extraData=[
     {
         id:1,
-        title:"1- Construction",
+        title:"1- Contruction",
         description:"The latest design trends meet hand-crafted templates. "
     },
     {

@@ -53,7 +53,7 @@ const ProjectsIntro = () => {
                 A huge creative team excited to create the Best Projects
               </h1>
               <p className="text-body-lead-large color-gray-500 mt-40 pr-40">
-               Our 200 completed and under construction projects of our company
+               Our 200 completed and under Contruction projects of our company
               </p>
               <div className="mt-40">
                 <Link href="/contact">

@@ -87,8 +87,8 @@ const Footer = () => {
               <h4 className="text-heading-5">Useful links</h4>
               <ul className="menu-footer mt-20">
                 <li>
-                  <Link href="/projects#construction">
-                    <a>Construction</a>
+                  <Link href="/projects#Contruction">
+                    <a>Contruction</a>
                   </Link>
                 </li>
                 <li>

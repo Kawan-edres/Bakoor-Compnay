@@ -11,8 +11,8 @@ import gas from '../../../public/assets/imgs/Home/gas.jpg'
 export const aboutOthersData=[
     {
         id:1,
-        title:"Construction",
-        description:"Bakoor Company for Construction and General Trading is a recognized industry leader in construction management.",
+        title:"Contruction",
+        description:"Bakoor Company for Contruction and General Trading is a recognized industry leader in Contruction management.",
         img:contruction,
         alt:"hotel",
         bg:"bg-1"
@@ -20,7 +20,7 @@ export const aboutOthersData=[
     {
         id:2,
         title:"Crushed Stone",
-        description:"We have Crushed Stones or (Angular Rocks) for all your construction needs",
+        description:"We have Crushed Stones or (Angular Rocks) for all your Contruction needs",
         img:crushedStone,
         alt:"crushed stone",
         bg:"bg-2"
@@ -47,7 +47,7 @@ export const aboutOthersData=[
     {
         id:5,
         title:"Gas Station",
-        description: "Bakoor Company for construction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
+        description: "Bakoor Company for Contruction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
         img:gas,
         alt:"bakoor water",
         bg:"bg-5"
@@ -75,7 +75,7 @@ export const aboutOthersData=[
     {
         id:8,
         title:"Sun Hotel",
-        description:"Bakoor Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
+        description:"Bakoor Company for Contruction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
         img:hotel,
         alt:"hotel",
         bg:"bg-8"

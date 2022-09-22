@@ -14,10 +14,10 @@ export const experiencesData = [
   {
     id: 1,
     img: worker,
-    alt: "construction",
+    alt: "Contruction",
 
-    heading: "construction",
-    description:"BAKOOR Company for Construction and General Trading is a recognized industry leader in construction management.",
+    heading: "Contruction",
+    description:"BAKOOR Company for Contruction and General Trading is a recognized industry leader in Contruction management.",
     bg: "bg-1",
   },
 
@@ -66,7 +66,7 @@ export const experiencesData = [
     img: gas,
     alt: "gas",
     heading: "Gas Station",
-    description: "BAKOOR Company for construction and general trading also has Gas Station under the name of BAKOOR Gas Station which one of our experiences ",
+    description: "BAKOOR Company for Contruction and general trading also has Gas Station under the name of BAKOOR Gas Station which one of our experiences ",
     bg: "bg-7",
   },
   {
@@ -74,7 +74,7 @@ export const experiencesData = [
     img: hotel,
     alt: "hotel",
     heading: "Hotel",
-    description:"BAKOOR Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
+    description:"BAKOOR Company for Contruction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
     bg: "bg-8",
   },
 
@@ -93,7 +93,7 @@ export const experiencesData = [
     alt: "waterpipe",
 
     heading: "Crushed Stone",
-    description:"We have Crushed Stones or (Angular Rocks) for all your construction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
+    description:"We have Crushed Stones or (Angular Rocks) for all your Contruction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
     bg: "bg-5",
   },
 ];

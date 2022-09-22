@@ -8,12 +8,12 @@ const About = () => {
                   About BAKOOR Company
                 </h2>
                 <p className="text-body-lead-large color-gray-600 mt-20">
-                BAKOOR Company for Construction and General Trading is a
-                  recognized industry leader in construction management,
+                BAKOOR Company for Contruction and General Trading is a
+                  recognized industry leader in Contruction management,
                   design-build, industrial services, pre-construction, and
                   general contracting by hundreds of clients throughout Iraq.
                   Bakoor was established in 2003, and is one of the premier
-                  construction companies with over 200 projects accomplished.
+                  Contruction companies with over 200 projects accomplished.
                 </p>
               </div>
               <div className="col-lg-2 col-sm-1 col-12" />

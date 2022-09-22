@@ -54,7 +54,7 @@ const Intro = () => {
               <motion.div animate={left} className="col-lg-7" style={{paddingBottom:"3rem"}}>
                 <h1  className="text-display-3">
                 BAKOOR Company for   
-                  <span className="color-green-900"> Construction</span> <br />
+                  <span className="color-green-900"> Contruction</span> <br />
                   and <br />
                   <span className="color-green-900">General </span>
 

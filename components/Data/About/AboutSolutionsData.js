@@ -15,16 +15,16 @@ export const aboutSolutions=[
     {
         id:1,
         img:worker,
-        alt:"Construction",
-        title:"1- Construction",
-        description:"Bakoor Company for Construction and General Trading is a recognized industry leader in construction management.",
+        alt:"Contruction",
+        title:"1- Contruction",
+        description:"Bakoor Company for Contruction and General Trading is a recognized industry leader in Contruction management.",
 
     },
     {
         id:2,
         img:road,
         alt:"road",
-        title:"2- Road Construction",
+        title:"2- Road Contruction",
         description: "Bakoor Company for Road Development is a recognized industry leader in Road Development.",
 
     },
@@ -65,7 +65,7 @@ export const aboutSolutions=[
         img:gas,
         alt:"gas",
         title:"7- Gas Station",
-        description: "Bakoor Company for construction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
+        description: "Bakoor Company for Contruction and general trading also has Gas Station under the name of Bakoor Gas Station which one of our experiences ",
 
     },
     {
@@ -73,7 +73,7 @@ export const aboutSolutions=[
         img:hotel,
         alt:"hotel",
         title:"8- Hotel",
-        description:"Bakoor Company for construction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
+        description:"Bakoor Company for Contruction has build the Erbil Sun hotel which is on of the most famous Hotels In Erbil Kurdistan  and It's on of our experiences.",
 
     },
     {
@@ -89,7 +89,7 @@ export const aboutSolutions=[
         img:stone,
         alt:"crushed stone",
         title:"10- Crushed stone",
-        description:"We have Crushed Stones or (Angular Rocks) for all your construction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
+        description:"We have Crushed Stones or (Angular Rocks) for all your Contruction needs. We have all the desired sizes and from different rocks Crushed by our big Machines.",
 
     },
 
