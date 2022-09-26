@@ -12,7 +12,7 @@ const Projects = ({ projects, data2 }) => {
   // SubCategory States
   const [orginalData2, setOrginalData2] = useState([]);
   const [filterData2, setFilterData2] = useState([]);
-  const [type2, setType2] = useState("concrete");
+  const [type2, setType2] = useState("concrete structure");
 
 
 
@@ -48,7 +48,9 @@ const Projects = ({ projects, data2 }) => {
 
       />
 
-      <Category filterData2={filterData2}  />
+      <Category
+      
+       filterData2={filterData2}  />
     </section>
   );
 };

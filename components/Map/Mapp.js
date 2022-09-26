@@ -9,8 +9,13 @@ import "leaflet-defaulticon-compatibility";
 
 export default function Mapp({ data }) {
 
+
  
   return (
+    <>
+ 
+
+ {data.lat && data.long &&
     <MapContainer
       className={classes["leaflet-container"]}
       center={[data.lat, data.long]}
@@ -26,5 +31,7 @@ export default function Mapp({ data }) {
         <Popup>{data.title}</Popup>
       </Marker>
     </MapContainer>
+ }
+    </>
   );
 }

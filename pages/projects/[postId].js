@@ -11,7 +11,6 @@ import { useRef } from "react";
 
 const ProjectDetail = ({data}) => {
 
-  const htmlString = "<h1>Hello World</h1>"
 
   const router=useRouter();
 

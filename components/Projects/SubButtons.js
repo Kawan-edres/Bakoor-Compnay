@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { useEffect } from "react";
-import {motion,AnimatePresence} from 'framer-motion'
+import {motion} from 'framer-motion'
 
 const SubButtons = ({ filterData,type2,setType2,orginalData2,setFilterData2}) => {
  
@@ -28,7 +27,7 @@ const SubButtons = ({ filterData,type2,setType2,orginalData2,setFilterData2}) =>
             return (
               <button
                
-              key={item.id}
+               key={item.id}
                 id="contruction"
                 className={
                     type2 === item.name
