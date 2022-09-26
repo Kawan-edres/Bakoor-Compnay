@@ -13,7 +13,7 @@ const Meta = ({ title, keywords, description,canonicalLink }) => {
       <meta property="og:locale" content="en_EN" />
       <meta property="og:site_name" content="Bakoor" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Bakoot | Company" />
+      <meta property="og:title" content="Bakoor | Company" />
       <meta property="og:description" content="Bakoor Company for Construction and General Trading is a recognized industry leader in construction management, design-build, industrial services, pre-construction, and general contracting by hundreds of clients throughout Iraq. Bakoor was established in 2003, and is one of the premier construction companies with over 200 projects accomplished." />
       <meta property="og:url" content="https://bakoorcompany.com" />
       <meta property="twitter:card" content="summary_large_image" />
